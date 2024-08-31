@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Tree Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Binary Tree Operations</h1>
+    <div>
+        <h2>Insert Nodes</h2>
+        <input type="text" id="insertValues" placeholder="Enter values separated by spaces">
+        <button onclick="insertNodes()">Insert</button>
+    </div>
+    <div>
+        <h2>Delete Node</h2>
+        <input type="number" id="deleteValue" placeholder="Enter value to delete">
+        <button onclick="deleteNode()">Delete</button>
+    </div>
+    <div>
+        <h2>Search Node</h2>
+        <input type="number" id="searchValue" placeholder="Enter value to search">
+        <button onclick="searchNode()">Search</button>
+        <p id="searchResult"></p>
+    </div>
+    <div>
+        <h2>Traversals</h2>
+        <button onclick="traverse('inorder')">Inorder Traversal</button>
+        <button onclick="traverse('preorder')">Preorder Traversal</button>
+        <button onclick="traverse('postorder')">Postorder Traversal</button>
+        <button onclick="traverse('levelorder')">Level Order Traversal</button>
+        <p id="traversalResult"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
